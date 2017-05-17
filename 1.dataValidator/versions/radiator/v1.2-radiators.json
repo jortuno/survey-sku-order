@@ -1,0 +1,932 @@
+{
+    "type": "root",
+    "children": [
+        {
+            "identifier": "floorName",
+            "title": "floor Name",
+            "options": [
+                {
+                    "text": "1"
+                },
+                {
+                    "text": "2"
+                },
+                {
+                    "text": "3"
+                },
+                {
+                    "text": "4"
+                },
+                {
+                    "text": "5"
+                },
+                {
+                    "text": "6"
+                },
+                {
+                    "text": "7"
+                },
+                {
+                    "text": "8"
+                },
+                {
+                    "text": "9"
+                },
+                {
+                    "text": "10"
+                },
+                {
+                    "text": "11"
+                },
+                {
+                    "text": "12"
+                },
+                {
+                    "text": "13"
+                },
+                {
+                    "text": "14"
+                },
+                {
+                    "text": "15"
+                },
+                {
+                    "text": "16"
+                },
+                {
+                    "text": "17"
+                },
+                {
+                    "text": "18"
+                },
+                {
+                    "text": "19"
+                },
+                {
+                    "text": "20"
+                },
+                {
+                    "text": "Basement"
+                }
+            ],
+            "type": "select",
+            "required_rule": "always"
+        },
+        {
+            "identifier": "lineName",
+            "title": "line Name",
+            "options": [
+                {
+                    "text": "None"
+                },
+                {
+                    "text": "A"
+                },
+                {
+                    "text": "B"
+                },
+                {
+                    "text": "C"
+                },
+                {
+                    "text": "D"
+                },
+                {
+                    "text": "E"
+                },
+                {
+                    "text": "F"
+                },
+                {
+                    "text": "G"
+                },
+                {
+                    "text": "H"
+                },
+                {
+                    "text": "I"
+                },
+                {
+                    "text": "J"
+                },
+                {
+                    "text": "K"
+                },
+                {
+                    "text": "L"
+                },
+                {
+                    "text": "M"
+                },
+                {
+                    "text": "N"
+                },
+                {
+                    "text": "O"
+                },
+                {
+                    "text": "P"
+                },
+                {
+                    "text": "Q"
+                },
+                {
+                    "text": "R"
+                },
+                {
+                    "text": "S"
+                },
+                {
+                    "text": "T"
+                },
+                {
+                    "text": "U"
+                },
+                {
+                    "text": "V"
+                },
+                {
+                    "text": "W"
+                },
+                {
+                    "text": "X"
+                },
+                {
+                    "text": "Y"
+                },
+                {
+                    "text": "Z"
+                }
+            ],
+            "type": "select",
+            "required_rule": "always"
+        },
+        {
+            "identifier": "unitName",
+            "title": "unit Name",
+            "type": "text",
+            "required_rule": "always",
+            "hint": ""
+        },
+        {
+            "identifier": "unitAccess",
+            "title": "unit Access",
+            "type": "boolean"
+        },
+        {
+            "identifier": "unitNickName",
+            "title": "unit Nick Name",
+            "type": "text",
+            "visible_rule": "when",
+            "visible_expr": "unitAccess = true"
+        },
+        {
+            "identifier": "unitAccessReason",
+            "title": "unit Access Reason",
+            "options": [
+                {
+                    "text": "No Key"
+                },
+                {
+                    "text": "Tenant Refused"
+                },
+                {
+                    "text": "Personal Safety"
+                },
+                {
+                    "text": "Dog"
+                },
+                {
+                    "text": "Clutter"
+                }
+            ],
+            "type": "select",
+            "visible_rule": "when",
+            "visible_expr": "unitAccess = false"
+        },
+        {
+            "identifier": "roomName",
+            "title": "room Name",
+            "options": [
+                {
+                    "text": "Bedroom"
+                },
+                {
+                    "text": "Living Room"
+                },
+                {
+                    "text": "Dining Room"
+                },
+                {
+                    "text": "Studio"
+                },
+                {
+                    "text": "Kitchen"
+                },
+                {
+                    "text": "Office"
+                },
+                {
+                    "text": "Conference Room"
+                },
+                {
+                    "text": "Lab"
+                },
+                {
+                    "text": "Shop"
+                },
+                {
+                    "text": "Classroom"
+                },
+                {
+                    "text": "Other"
+                }
+            ],
+            "type": "select",
+            "visible_rule": "when",
+            "visible_expr": "unitAccess = true"
+        },
+        {
+            "identifier": "roomNumber",
+            "title": "room Number",
+            "options": [
+                {
+                    "text": "1"
+                },
+                {
+                    "text": "2"
+                },
+                {
+                    "text": "3"
+                },
+                {
+                    "text": "4"
+                },
+                {
+                    "text": "5"
+                },
+                {
+                    "text": "6"
+                },
+                {
+                    "text": "7"
+                },
+                {
+                    "text": "8"
+                },
+                {
+                    "text": "9"
+                },
+                {
+                    "text": "10"
+                }
+            ],
+            "type": "select",
+            "visible_rule": "when",
+            "visible_expr": "unitAccess = true",
+            "required_rule": "always"
+        },
+        {
+            "identifier": "roomNickName",
+            "title": "room Nick Name",
+            "type": "text",
+            "visible_rule": "when",
+            "visible_expr": "unitAccess = true"
+        },
+        {
+            "identifier": "roomAccess",
+            "title": "room Access",
+            "type": "boolean",
+            "visible_rule": "when",
+            "visible_expr": "unitAccess = true"
+        },
+        {
+            "identifier": "roomAccessReason",
+            "title": "room Access Reason",
+            "type": "text",
+            "visible_rule": "when",
+            "visible_expr": "roomAccess = false",
+            "hint": "Reason why you were not able to access this Room"
+        },
+        {
+            "identifier": "risers",
+            "title": "risers",
+            "autoIdentifier": true,
+            "type": "boolean",
+            "initialAnswer": "false",
+            "hint": "",
+            "visible_rule": "when",
+            "visible_expr": "AND(unitAccess = true,roomAccess = true)"
+        },
+        {
+            "identifier": "risersInsulated",
+            "title": "risers Insulated",
+            "type": "boolean",
+            "visible_rule": "when",
+            "visible_expr": "AND(AND(unitAccess = true,roomAccess = true),risers = true)"
+        },
+        {
+            "identifier": "risersPhoto",
+            "title": "risers Photo",
+            "type": "image",
+            "visible_rule": "when",
+            "visible_expr": "AND(AND(AND(unitAccess = true,roomAccess = true),risers = true),risersInsulated = false)"
+        },
+        {
+            "identifier": "radiatorNumber",
+            "title": "radiator Number",
+            "options": [
+                {
+                    "text": "1"
+                },
+                {
+                    "text": "2"
+                },
+                {
+                    "text": "3"
+                },
+                {
+                    "text": "4"
+                },
+                {
+                    "text": "5"
+                },
+                {
+                    "text": "6"
+                },
+                {
+                    "text": "7"
+                },
+                {
+                    "text": "8"
+                },
+                {
+                    "text": "9"
+                },
+                {
+                    "text": "10"
+                }
+            ],
+            "type": "select",
+            "visible_rule": "when",
+            "visible_expr": "AND(unitAccess = true,roomAccess = true)",
+            "required_rule": "always"
+        },
+        {
+            "identifier": "radiatorAccess",
+            "title": "radiator Access",
+            "type": "boolean",
+            "visible_rule": "when",
+            "visible_expr": "AND(unitAccess = true,roomAccess = true)"
+        },
+        {
+            "identifier": "radiatorAccessReason",
+            "title": "radiator Access Reason",
+            "type": "text",
+            "visible_rule": "when",
+            "visible_expr": "AND(AND(unitAccess = true,roomAccess = true),radiatorAccess = false)"
+        },
+        {
+            "identifier": "radiatorNickName",
+            "title": "radiator Nickname",
+            "type": "text",
+            "visible_rule": "when",
+            "visible_expr": "AND(unitAccess = true,roomAccess = true)"
+        },
+        {
+            "identifier": "radiatorType",
+            "title": "radiator Type",
+            "options": [
+                {
+                    "text": "Stand Alone Cast Iron"
+                },
+                {
+                    "text": "Wall Mounted Cast Iron"
+                },
+                {
+                    "text": "Stand Alone Fin-Tube"
+                },
+                {
+                    "text": "Wall Mounted Fin-Tube"
+                },
+                {
+                    "text": "Baseboard Fin-Tube"
+                },
+                {
+                    "text": "Recessed Convector"
+                },
+                {
+                    "text": "Built-In Cabinet"
+                },
+                {
+                    "text": "Riser Only"
+                },
+                {
+                    "text": "No Heating Source"
+                },
+                {
+                    "text": "Cannot Determine"
+                }
+            ],
+            "type": "select",
+            "visible_rule": "when",
+            "visible_expr": "AND(unitAccess = true,roomAccess = true)",
+            "required_rule": "always"
+        },
+        {
+            "identifier": "pipingSystem",
+            "title": "piping System",
+            "options": [
+                {
+                    "text": "One-Pipe"
+                },
+                {
+                    "text": "Two-Pipe"
+                }
+            ],
+            "type": "select",
+            "visible_rule": "when",
+            "visible_expr": "AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),radiatorAccess = true)",
+            "required_rule": "always"
+        },
+        {
+            "identifier": "wallHingeLeftLength",
+            "title": "wall Hinge Left Length",
+            "type": "decimal",
+            "visible_rule": "when",
+            "visible_expr": "AND(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Wall Mounted Cast Iron\"),radiatorAccess = true)"
+        },
+        {
+            "identifier": "wallHingeRightLength",
+            "title": "wall Hinge Right Length",
+            "type": "decimal",
+            "visible_rule": "when",
+            "visible_expr": "AND(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Wall Mounted Cast Iron\"),radiatorAccess = true)"
+        },
+        {
+            "identifier": "wallHingeHeight",
+            "title": "wall Hinge Height",
+            "type": "decimal",
+            "visible_rule": "when",
+            "visible_expr": "AND(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Wall Mounted Cast Iron\"),radiatorAccess = true)"
+        },
+        {
+            "identifier": "existingCover",
+            "title": "existing Cover",
+            "type": "boolean",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "OR(AND(AND(AND(unitAccess = true,roomAccess = true),radiatorAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\")"
+        },
+        {
+            "identifier": "existingCoverMaxSide",
+            "title": "existing Cover Max Side",
+            "options": [
+                {
+                    "text": "Left"
+                },
+                {
+                    "text": "Left Front"
+                },
+                {
+                    "text": "Right"
+                },
+                {
+                    "text": "Right Front"
+                }
+            ],
+            "type": "select",
+            "visible_rule": "when",
+            "visible_expr": "AND(OR(AND(AND(AND(unitAccess = true,roomAccess = true),radiatorAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),existingCover = true)",
+            "hint": "Left, Right, Left Front or Right Front. The side which has the most space between the radiator and the cover. "
+        },
+        {
+            "identifier": "existingCoverMaxLength",
+            "title": "existing Cover Max Length",
+            "type": "decimal",
+            "visible_rule": "when",
+            "visible_expr": "AND(OR(AND(AND(AND(unitAccess = true,roomAccess = true),radiatorAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),existingCover = true)"
+        },
+        {
+            "identifier": "maintenanceRequired",
+            "title": "maintenance Required",
+            "type": "boolean",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),radiatorAccess = true)"
+        },
+        {
+            "identifier": "maintenanceRequiredSpec",
+            "title": "maintenance Required Spec",
+            "type": "text",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),maintenanceRequired = true),radiatorAccess = true)",
+            "hint": ""
+        },
+        {
+            "identifier": "heightFreeSpace",
+            "title": "height Free Space",
+            "type": "boolean",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),radiatorAccess = true)"
+        },
+        {
+            "identifier": "heightFreeSpaceObstruction",
+            "title": "height FreeSpace Obstruction",
+            "type": "text",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),heightFreeSpace = false),radiatorAccess = true)",
+            "hint": ""
+        },
+        {
+            "identifier": "heightFreeSpaceMeasurement",
+            "title": "height FreeSpace Measurement",
+            "type": "decimal",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),heightFreeSpace = false),radiatorAccess = true)"
+        },
+        {
+            "identifier": "plugDistance",
+            "title": "plug Distance",
+            "type": "decimal",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),radiatorAccess = true)",
+            "hint": "In Feet"
+        },
+        {
+            "identifier": "radHeight",
+            "title": "rad Height",
+            "type": "decimal",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),radiatorAccess = true)"
+        },
+        {
+            "identifier": "radLength",
+            "title": "rad Length",
+            "type": "decimal",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),radiatorAccess = true)"
+        },
+        {
+            "identifier": "radWidth",
+            "title": "rad Width",
+            "type": "decimal",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),radiatorAccess = true)"
+        },
+        {
+            "identifier": "valveSide",
+            "title": "valve Side",
+            "options": [
+                {
+                    "text": "Left"
+                },
+                {
+                    "text": "Right"
+                }
+            ],
+            "type": "select",
+            "required_rule": "always",
+            "visible_rule": "when",
+            "visible_expr": "OR(AND(AND(AND(unitAccess = true,roomAccess = true),radiatorAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\")"
+        },
+        {
+            "identifier": "rightHeight",
+            "title": "right Height",
+            "type": "decimal",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),radiatorAccess = true)"
+        },
+        {
+            "identifier": "rightLength",
+            "title": "right Length",
+            "type": "decimal",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),radiatorAccess = true)"
+        },
+        {
+            "identifier": "rightCutout",
+            "title": "right Cutout",
+            "type": "boolean",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),radiatorAccess = true)"
+        },
+        {
+            "identifier": "rightFreeSpace",
+            "title": "right FreeSpace",
+            "type": "boolean",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),radiatorAccess = true)",
+            "hint": "Greater than 13\" "
+        },
+        {
+            "identifier": "rightFreeSpaceMeasurement",
+            "title": "right FreeSpace Measurement",
+            "type": "decimal",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),rightFreeSpace = false),radiatorAccess = true)"
+        },
+        {
+            "identifier": "rightObstruction",
+            "title": "right Obstruction",
+            "type": "text",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),rightFreeSpace = false),radiatorAccess = true)"
+        },
+        {
+            "identifier": "rightObstructionMoveable",
+            "title": "right Obstruction Moveable",
+            "type": "boolean",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),rightFreeSpace = false),radiatorAccess = true)"
+        },
+        {
+            "identifier": "rightFreeSpaceObstructionMeasurement",
+            "title": "right Freespace Obstruction Measurement",
+            "type": "decimal",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(AND(AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),rightFreeSpace = false),rightObstructionMoveable = true),radiatorAccess = true)"
+        },
+        {
+            "identifier": "leftHeight",
+            "title": "left Height",
+            "type": "decimal",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),radiatorAccess = true)"
+        },
+        {
+            "identifier": "leftLength",
+            "title": "left Length",
+            "type": "decimal",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),radiatorAccess = true)"
+        },
+        {
+            "identifier": "leftCutout",
+            "title": "left Cutout",
+            "type": "boolean",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),radiatorAccess = true)"
+        },
+        {
+            "identifier": "leftFreeSpace",
+            "title": "left FreeSpace",
+            "type": "boolean",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),radiatorAccess = true)",
+            "hint": "Greater than 13\""
+        },
+        {
+            "identifier": "leftFreeSpaceMeasurement",
+            "title": "left FreeSpace Measurement",
+            "type": "decimal",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),leftFreeSpace = false),radiatorAccess = true)"
+        },
+        {
+            "identifier": "leftObstruction",
+            "title": "left Obstruction",
+            "type": "text",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),leftFreeSpace = false),radiatorAccess = true)"
+        },
+        {
+            "identifier": "leftObstructionMoveable",
+            "title": "left Obstruction Moveable",
+            "type": "boolean",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),leftFreeSpace = false),radiatorAccess = true)"
+        },
+        {
+            "identifier": "leftFreeSpaceObstructionMeasurement",
+            "title": "left FreeSpace Obstruction Measurement",
+            "type": "decimal",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(AND(AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),leftFreeSpace = false),leftObstructionMoveable = true),radiatorAccess = true)"
+        },
+        {
+            "identifier": "lowerValvePipe",
+            "title": "lower ValvePipe",
+            "type": "boolean",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),radiatorAccess = true)"
+        },
+        {
+            "identifier": "lowerValvePipeHeight",
+            "title": "lower ValvePipe Height",
+            "type": "decimal",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),lowerValvePipe = true),radiatorAccess = true)"
+        },
+        {
+            "identifier": "lowerValvePipeLength",
+            "title": "lower ValvePipe Length",
+            "type": "decimal",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),lowerValvePipe = true),radiatorAccess = true)"
+        },
+        {
+            "identifier": "belowWindow",
+            "title": "below Window?",
+            "type": "boolean",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Stand Alone Fin-Tube\"),radiatorAccess = true)"
+        },
+        {
+            "identifier": "windowHeight",
+            "title": "window Height",
+            "type": "decimal",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),belowWindow = true),radiatorAccess = true)"
+        },
+        {
+            "identifier": "fireGate",
+            "title": "fire Gate",
+            "type": "boolean",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),belowWindow = true),radiatorAccess = true)"
+        },
+        {
+            "identifier": "backPanelObstruction",
+            "title": "back Panel Obstruction",
+            "type": "boolean",
+            "visible_rule": "when",
+            "visible_expr": "AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),radiatorAccess = true)"
+        },
+        {
+            "identifier": "required_Back_Panel",
+            "title": "required Back Panel",
+            "options": [
+                {
+                    "text": "Fabric Back Panel"
+                },
+                {
+                    "text": "Can Not Retrofit"
+                }
+            ],
+            "type": "select",
+            "visible_rule": "when",
+            "visible_expr": "AND(AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),backPanelObstruction = true),radiatorAccess = true)"
+        },
+        {
+            "identifier": "backPanelObstructionObject",
+            "title": "back Panel Obstruction Object",
+            "type": "text",
+            "visible_rule": "when",
+            "visible_expr": "AND(AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),backPanelObstruction = true),radiatorAccess = true)"
+        },
+        {
+            "identifier": "rightSidePanelObstruction",
+            "title": "right Side Panel Obstruction",
+            "type": "boolean",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),radiatorAccess = true)"
+        },
+        {
+            "identifier": "rightSidePanelObstructionObject",
+            "title": "right Side Panel Obstruction Object",
+            "type": "text",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),rightSidePanelObstruction = true),radiatorAccess = true)"
+        },
+        {
+            "identifier": "leftSidePanelObstruction",
+            "title": "left Side Panel Obstruction",
+            "type": "boolean",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),radiatorAccess = true)"
+        },
+        {
+            "identifier": "leftSidePanelObstructionObject",
+            "title": "left Side Panel Obstruction Object",
+            "type": "text",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),leftSidePanelObstruction = true),radiatorAccess = true)"
+        },
+        {
+            "identifier": "topPhoto",
+            "title": "top Photo",
+            "type": "image",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "camera_only": true,
+            "visible_expr": "AND(AND(unitAccess = true,roomAccess = true),radiatorAccess = true)"
+        },
+        {
+            "identifier": "frontPhoto",
+            "title": "front Photo",
+            "type": "image",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "camera_only": true,
+            "visible_expr": "AND(AND(unitAccess = true,roomAccess = true),radiatorAccess = true)"
+        },
+        {
+            "identifier": "rightSidePhoto",
+            "title": "right Side Photo",
+            "type": "image",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),radiatorAccess = true)",
+            "camera_only": true
+        },
+        {
+            "identifier": "leftSidePhoto",
+            "title": "left Side Photo",
+            "type": "image",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),radiatorAccess = true)",
+            "camera_only": true
+        },
+        {
+            "identifier": "rightCutoutPhoto",
+            "title": "right Cutout Photo",
+            "type": "image",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),rightCutout = true),radiatorAccess = true)",
+            "camera_only": true
+        },
+        {
+            "identifier": "leftCutoutPhoto",
+            "title": "left Cutout Photo",
+            "type": "image",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),leftCutout = true),radiatorAccess = true)",
+            "camera_only": true
+        },
+        {
+            "identifier": "leftSidePanelObstructionPhoto",
+            "title": "left Side Panel Obstruction Photo",
+            "type": "image",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),leftSidePanelObstruction = true),radiatorAccess = true)",
+            "camera_only": true
+        },
+        {
+            "identifier": "rightSidePanelObstructionPhoto",
+            "title": "right Side Panel Obstruction Photo",
+            "type": "image",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),rightSidePanelObstruction = true),radiatorAccess = true)",
+            "camera_only": true
+        },
+        {
+            "identifier": "backPanelObstructionPhoto",
+            "title": "back Panel Obstruction Photo",
+            "type": "image",
+            "visible_rule": "when",
+            "required_rule": "always",
+            "visible_expr": "AND(AND(OR(AND(AND(unitAccess = true,roomAccess = true),radiatorType = \"Stand Alone Cast Iron\"),radiatorType = \"Wall Mounted Cast Iron\"),backPanelObstruction = true),radiatorAccess = true)",
+            "camera_only": true
+        },
+        {
+            "identifier": "miscellaneousPhoto",
+            "title": "miscellaneous Photo",
+            "type": "image",
+            "visible_rule": "when",
+            "visible_expr": "AND(AND(unitAccess = true,roomAccess = true),radiatorAccess = true)",
+            "camera_only": true
+        }
+    ],
+    "title": "v1.2 - Cast Iron Radiators",
+    "description": "MASTER Survey Template"
+}

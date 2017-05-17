@@ -87,3 +87,14 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+pytz-2016.10.dist-info/
+pandas-0.19.2.dist-info/
+python_dateutil-2.6.0.dist-info/
+pytz/
+pandas/
+numpy/
+numpy-1.12.0-py2.7.egg-info/
+six-1.10.0.dist-info/
+*.zip
+*.pyc

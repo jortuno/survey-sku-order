@@ -1,0 +1,179 @@
+{
+    "type": "root",
+    "children": [
+        {
+            "identifier": "clientName",
+            "title": "clientName",
+            "autoIdentifier": true,
+            "type": "text",
+            "required_rule": "always"
+        },
+        {
+            "identifier": "buildingName",
+            "title": "buildingName",
+            "type": "text"
+        },
+        {
+            "identifier": "addressLine1",
+            "title": "addressLine1",
+            "type": "text"
+        },
+        {
+            "identifier": "addressLine2",
+            "title": "addressLine2",
+            "type": "text"
+        },
+        {
+            "identifier": "city",
+            "title": "city",
+            "type": "text"
+        },
+        {
+            "identifier": "state",
+            "title": "state",
+            "options": [
+                {
+                    "text": "New York"
+                },
+                {
+                    "text": "New Jersey"
+                },
+                {
+                    "text": "Connecticut"
+                },
+                {
+                    "text": "Pennsylvania"
+                }
+            ],
+            "type": "select",
+            "required_rule": "always"
+        },
+        {
+            "identifier": "zipCode",
+            "title": "zipCode",
+            "type": "integer"
+        },
+        {
+            "identifier": "fuelType",
+            "title": "fuelType",
+            "options": [
+                {
+                    "text": "#2 Oil"
+                },
+                {
+                    "text": "#4 Oil"
+                },
+                {
+                    "text": "#6 Oil"
+                },
+                {
+                    "text": "Natural Gas"
+                },
+                {
+                    "text": "District Steam"
+                }
+            ],
+            "type": "select"
+        },
+        {
+            "identifier": "squareFootage",
+            "title": "squareFootage",
+            "type": "integer",
+            "hint": "Building total square feet"
+        },
+        {
+            "identifier": "masterKey",
+            "title": "masterKey",
+            "type": "boolean"
+        },
+        {
+            "identifier": "boilerControlCompany",
+            "title": "boilerControlCompany",
+            "type": "text"
+        },
+        {
+            "identifier": "internetAccess",
+            "title": "internetAccess",
+            "type": "boolean"
+        },
+        {
+            "identifier": "gatewayLocation",
+            "title": "gatewayLocation",
+            "type": "text"
+        },
+        {
+            "identifier": "wallRouterLocation",
+            "title": "wallRouterLocation",
+            "type": "text",
+            "multi_line": true
+        },
+        {
+            "identifier": "stagingLocation",
+            "title": "stagingLocation",
+            "type": "boolean"
+        },
+        {
+            "identifier": "stagingLocationInfo",
+            "title": "stagingLocationInfo",
+            "type": "text",
+            "required_rule": "when",
+            "required_expr": "stagingLocation = true",
+            "hint": " "
+        },
+        {
+            "identifier": "elevatorAvailable",
+            "title": "elevatorAvailable",
+            "type": "boolean"
+        },
+        {
+            "identifier": "elevatorType",
+            "title": "elevatorType",
+            "options": [
+                {
+                    "text": "Passenger"
+                },
+                {
+                    "text": "Passenger and Freight"
+                }
+            ],
+            "type": "select",
+            "visible_rule": "when",
+            "visible_expr": "elevatorAvailable = true"
+        },
+        {
+            "identifier": "LiveInSuper",
+            "title": "liveInSuper",
+            "type": "boolean"
+        },
+        {
+            "identifier": "superFirstName",
+            "title": "superFirstName",
+            "type": "text",
+            "required_rule": "when",
+            "required_expr": "LiveInSuper = true"
+        },
+        {
+            "identifier": "superLastName",
+            "title": "superLastName",
+            "type": "text",
+            "required_rule": "when",
+            "required_expr": "LiveInSuper = true"
+        },
+        {
+            "identifier": "superAptNumber",
+            "title": "superAptNumber",
+            "type": "text",
+            "visible_rule": "when",
+            "visible_expr": "LiveInSuper = true"
+        },
+        {
+            "identifier": "superPhoneNumber",
+            "title": "superPhoneNumber",
+            "type": "phone_number",
+            "required_rule": "when",
+            "required_expr": "LiveInSuper = true"
+        }
+    ],
+    "title": "v1.0 - New Building Information",
+    "description": "v1.0 - PreSurvey"
+}

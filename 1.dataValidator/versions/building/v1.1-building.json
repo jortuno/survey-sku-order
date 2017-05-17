@@ -1,0 +1,329 @@
+{
+    "type": "root",
+    "children": [
+        {
+            "identifier": "clientName",
+            "title": "client Name",
+            "type": "text",
+            "required_rule": "always"
+        },
+        {
+            "identifier": "buildingName",
+            "title": "building Name",
+            "type": "text"
+        },
+        {
+            "identifier": "addressLine1",
+            "title": "address Line 1",
+            "type": "text"
+        },
+        {
+            "identifier": "addressLine2",
+            "title": "address Line 2",
+            "type": "text"
+        },
+        {
+            "identifier": "city",
+            "title": "city",
+            "type": "text"
+        },
+        {
+            "identifier": "state",
+            "title": "state",
+            "options": [
+                {
+                    "text": "New York"
+                },
+                {
+                    "text": "New Jersey"
+                },
+                {
+                    "text": "Connecticut"
+                },
+                {
+                    "text": "Pennsylvania"
+                }
+            ],
+            "type": "select",
+            "required_rule": "always"
+        },
+        {
+            "identifier": "zipCode",
+            "title": "zip Code",
+            "type": "text"
+        },
+        {
+            "identifier": "totalFloors",
+            "title": "total Floors",
+            "type": "integer"
+        },
+        {
+            "identifier": "totalUnits",
+            "title": "total Units",
+            "type": "integer"
+        },
+        {
+            "identifier": "yearBuilt",
+            "title": "year Built",
+            "type": "integer"
+        },
+        {
+            "identifier": "squareFootage",
+            "title": "square Footage",
+            "type": "integer",
+            "hint": "Building total square feet"
+        },
+        {
+            "identifier": "masterKey",
+            "title": "master Key",
+            "type": "boolean",
+            "hint": "Does the building have keys to all apt's"
+        },
+        {
+            "identifier": "sitePartner",
+            "title": "Site Partner?",
+            "type": "boolean"
+        },
+        {
+            "identifier": "sitePartnerCompanyName",
+            "title": "Site Partner Company Name",
+            "type": "text",
+            "visible_rule": "when",
+            "visible_expr": "sitePartner = true"
+        },
+        {
+            "identifier": "sitePartnerAddressLine1",
+            "title": "Site Partner Address Line 1",
+            "type": "text",
+            "visible_rule": "when",
+            "visible_expr": "sitePartner = true"
+        },
+        {
+            "identifier": "sitePartnerAddressLine2",
+            "title": "Site Partner Address Line 2",
+            "type": "text",
+            "visible_rule": "when",
+            "visible_expr": "sitePartner = true"
+        },
+        {
+            "identifier": "sitePartnerCity",
+            "title": "Site Partner City",
+            "type": "text",
+            "visible_rule": "when",
+            "visible_expr": "sitePartner = true"
+        },
+        {
+            "identifier": "sitePartnerState",
+            "title": "Site Partner State",
+            "options": [
+                {
+                    "text": "New York"
+                },
+                {
+                    "text": "New Jersey"
+                },
+                {
+                    "text": "Connecticut"
+                },
+                {
+                    "text": "Pennsylvania"
+                }
+            ],
+            "type": "select",
+            "visible_rule": "when",
+            "visible_expr": "sitePartner = true"
+        },
+        {
+            "identifier": "sitePartnerZipCode",
+            "title": "Site Partner Zip Code",
+            "type": "text",
+            "visible_rule": "when",
+            "visible_expr": "sitePartner = true"
+        },
+        {
+            "identifier": "sitePartnerContactFirstName",
+            "title": "Site Partner Contact First Name",
+            "type": "text",
+            "visible_rule": "when",
+            "visible_expr": "sitePartner = true"
+        },
+        {
+            "identifier": "sitePartnerContactLastName",
+            "title": "Site Partner Contact Last Name",
+            "type": "text",
+            "visible_rule": "when",
+            "visible_expr": "sitePartner = true"
+        },
+        {
+            "identifier": "sitePartnerPhoneNumber",
+            "title": "Site Partner Phone Number",
+            "type": "phone_number",
+            "visible_rule": "when",
+            "visible_expr": "sitePartner = true"
+        },
+        {
+            "identifier": "sitePartnerEmail",
+            "title": "Site Partner Email",
+            "type": "email",
+            "visible_rule": "when",
+            "visible_expr": "sitePartner = true"
+        },
+        {
+            "identifier": "boilerControlCompany",
+            "title": "boiler Control Company",
+            "type": "text"
+        },
+        {
+            "identifier": "boilerControllerSerial",
+            "title": "Boiler Controller Serial",
+            "type": "text"
+        },
+        {
+            "identifier": "fuelType",
+            "title": "fuel Type",
+            "options": [
+                {
+                    "text": "#2 Oil"
+                },
+                {
+                    "text": "#4 Oil"
+                },
+                {
+                    "text": "#6 Oil"
+                },
+                {
+                    "text": "Oil"
+                },
+                {
+                    "text": "Natural Gas"
+                },
+                {
+                    "text": "District Steam"
+                }
+            ],
+            "type": "select",
+            "multiple": true
+        },
+        {
+            "identifier": "internetAccess",
+            "title": "internet Access",
+            "type": "boolean"
+        },
+        {
+            "identifier": "gatewayLocation",
+            "title": "gateway Location",
+            "type": "text"
+        },
+        {
+            "identifier": "wallRouterLocation",
+            "title": "wall Router Location",
+            "type": "text",
+            "multi_line": true
+        },
+        {
+            "identifier": "stagingLocation",
+            "title": "staging Location",
+            "type": "boolean"
+        },
+        {
+            "identifier": "stagingLocationInfo",
+            "title": "staging Location Info",
+            "type": "text",
+            "hint": " ",
+            "visible_rule": "when",
+            "visible_expr": "stagingLocation = true"
+        },
+        {
+            "identifier": "elevatorAvailable",
+            "title": "elevator Available",
+            "type": "boolean"
+        },
+        {
+            "identifier": "elevatorType",
+            "title": "elevator Type",
+            "options": [
+                {
+                    "text": "Passenger"
+                },
+                {
+                    "text": "Passenger and Freight"
+                }
+            ],
+            "type": "select",
+            "visible_rule": "when",
+            "visible_expr": "elevatorAvailable = true"
+        },
+        {
+            "identifier": "super",
+            "title": "super",
+            "type": "boolean",
+            "required_rule": "always"
+        },
+        {
+            "identifier": "LiveInSuper",
+            "title": "live In Super",
+            "type": "boolean",
+            "visible_rule": "when",
+            "visible_expr": "super = true"
+        },
+        {
+            "identifier": "superFirstName",
+            "title": "super First Name",
+            "type": "text",
+            "visible_rule": "when",
+            "visible_expr": "super = true"
+        },
+        {
+            "identifier": "superLastName",
+            "title": "super Last Name",
+            "type": "text",
+            "visible_rule": "when",
+            "visible_expr": "super = true"
+        },
+        {
+            "identifier": "superAptNumber",
+            "title": "super Apt Number",
+            "type": "text",
+            "visible_rule": "when",
+            "visible_expr": "LiveInSuper = true"
+        },
+        {
+            "identifier": "superPhoneNumber",
+            "title": "super Phone Number",
+            "type": "phone_number",
+            "visible_rule": "when",
+            "visible_expr": "super = true"
+        },
+        {
+            "identifier": "shippingContactFirstName",
+            "title": "shipping Contact First Name",
+            "type": "text",
+            "visible_rule": "when",
+            "visible_expr": "super = false",
+            "hint": "If we don't know who the super is - who should the shipment be addressed to?"
+        },
+        {
+            "identifier": "shippingContactLastName",
+            "title": "shipping Contact Last Name",
+            "type": "text",
+            "visible_rule": "when",
+            "visible_expr": "super = false"
+        },
+        {
+            "identifier": "shippingContactPhoneNumber",
+            "title": "shipping Contact Phone Number",
+            "type": "phone_number",
+            "visible_rule": "when",
+            "visible_expr": "super = false"
+        },
+        {
+            "identifier": "shippingContactEmail",
+            "title": "shipping Contact Email",
+            "type": "email",
+            "visible_rule": "when",
+            "visible_expr": "super = false"
+        }
+    ],
+    "title": "v1.1 - New Building Information",
+    "description": "v1.1 - PreSurvey"
+}
