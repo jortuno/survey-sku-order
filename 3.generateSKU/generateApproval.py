@@ -11,10 +11,11 @@ import string
 
 def main(building,final):
 	oldColumns = ["unitName","roomName","radiatorName","No Survey Access","cannotInstall","customFabricRequired","moveable","lengthFlag","heightFlag","id"]
-	headerApproval = ["Unit","Room Name","Radiator","No Survey Access","Cannot Install","Custom Fabric Cover Required","Furniture","Length Flag","Height Flag","Radiator Id","Approval (Y/N)"]
+	headerApproval = ["Unit","Room Name","Radiator","No Survey Access","Cannot Install","Custom Fabric Cover Required","Furniture","Length Flag","Height Flag","Radiator Id","Approval (Y/N)","Pro"]
 	approval = final[oldColumns]
 	approval = approval.drop_duplicates()
 	approval.loc[:,"Approval (Y/N)"] = np.nan
+	approval.loc[:,"Pro"] = np.nan
 	approval.columns = headerApproval
 	approval.index = np.arange(0,len(approval))
 	writeFile(building,approval)
@@ -53,7 +54,7 @@ def writeFile(building,approval):
 
 								
 	columns = ["Unit","Room Name","Radiator","No Survey Access","Cannot Install",
-	"Custom Fabric Cover Required","Furniture","Length Flag","Height Flag","Confirm Order","Radiator Id"]
+	"Custom Fabric Cover Required","Furniture","Length Flag","Height Flag","Confirm Order","Radiator Id","Pro"]
 
 	start = ord('a') 
 
