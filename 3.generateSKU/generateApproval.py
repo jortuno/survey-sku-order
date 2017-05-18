@@ -9,9 +9,6 @@ import numpy as np
 import xlsxwriter
 import string
 
-sys.path.append("C:\Users/Meg/Documents/GitHub/survey-sku-po")
-from barcodeGenerator import * 
-
 def main(building,final):
 	oldColumns = ["unitName","roomName","radiatorName","No Survey Access","cannotInstall","customFabricRequired","moveable","lengthFlag","heightFlag","id"]
 	headerApproval = ["Unit","Room Name","Radiator","No Survey Access","Cannot Install","Custom Fabric Cover Required","Furniture","Length Flag","Height Flag","Radiator Id","Approval (Y/N)"]
