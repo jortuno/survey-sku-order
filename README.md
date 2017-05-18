@@ -1,2 +1,11 @@
 # survey-sku-order
-scripts which run in aws to parse survey data, generate enclosure skus, and generate orders for enclosures
+1. dataValidator 
+2. parseRadiatorData
+3. generateSKU
+4. generateOrder
+
+## dataValidator
+
+## parseRadiatorData
+## generateSKU
+## generateOrder
