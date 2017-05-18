@@ -40,12 +40,14 @@ def lambda_handler(event, context):
 		print (event)
 		## variables passed to the function call 
 		try:
-			buildingId = event["body"]["buildingId"]
+			buildingId = event["buildingId"]
 		except:
 			buildingId = None
 		
-		key = event["body"]["key"]
-		emailTo = event["body"]["id"]
+		key = event["key"]
+		emailTo = event["id"]
+		print(key)
+		print(emailTo)
 		
 		## parse the file key to get information 
 		date, building, surveyType, surveyVersion = key.strip(".csv").split("_")
