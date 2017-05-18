@@ -45,7 +45,7 @@ def lambda_handler(event, context):
 	try:
 		print (event)
 
-		emailTo = ["meg@radiatorlabs.com"]
+		emailTo = ["rigers@radiatorlabs.com"]
 
 		bucket = str(event['Records'][0]['s3']['bucket']['name'])
 		title = str(event['Records'][0]['s3']['object']['key'])
