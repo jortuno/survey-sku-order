@@ -1,0 +1,129 @@
+Panel,Part Number,Part Print
+Aesthetic Panel (D x H),AP075240,7.5 x 24.0
+Aesthetic Panel (D x H),AP075300,7.5 x 30.0
+Aesthetic Panel (D x H),AP075360,7.5 x 36.0
+Aesthetic Panel (D x H),AP075420,7.5 x 42.0
+Aesthetic Panel (D x H),AP095240,9.5 x 24.0
+Aesthetic Panel (D x H),AP095300,9.5 x 30.0
+Aesthetic Panel (D x H),AP095360,9.5 x 36.0
+Aesthetic Panel (D x H),AP095420,9.5 x 42.0
+Aesthetic Panel (D x H),AP115240,11.5 x 24.0
+Aesthetic Panel (D x H),AP115300,11.5 x 30.0
+Aesthetic Panel (D x H),AP115360,11.5 x 36.0
+Aesthetic Panel (D x H),AP115420,11.5 x 42.0
+Aesthetic Panel (D x H),AP135240,13.5 x 24.0
+Aesthetic Panel (D x H),AP135300,13.5 x 30.0
+Aesthetic Panel (D x H),AP135360,13.5 x 36.0
+Aesthetic Panel (D x H),AP135420,13.5 x 42.0
+Back Panel (H x L),BP230160,16.0 x 23.0
+Back Panel (H x L),BP290160,16.0 x 29.0
+Back Panel (H x L),BP350160,16.0 x 35.0
+Back Panel (H x L),BP410160,16.0 x 41.0
+Back Panel (H x L),BP470160,16.0 x 47.0
+Back Panel (H x L),BP530160,16.0 x 53.0
+Back Panel (H x L),BP230220,22.0 x 23.0
+Back Panel (H x L),BP290220,22.0 x 29.0
+Back Panel (H x L),BP350220,22.0 x 35.0
+Back Panel (H x L),BP410220,22.0 x 41.0
+Back Panel (H x L),BP470220,22.0 x 47.0
+Back Panel (H x L),BP530220,22.0 x 53.0
+Back Panel (H x L),BP230280,28.0 x 23.0
+Back Panel (H x L),BP290280,28.0 x 29.0
+Back Panel (H x L),BP350280,28.0 x 35.0
+Back Panel (H x L),BP410280,28.0 x 41.0
+Back Panel (H x L),BP470280,28.0 x 47.0
+Back Panel (H x L),BP530280,28.0 x 53.0
+Back Panel (H x L),BP230340,34.0 x 23.0
+Back Panel (H x L),BP290340,34.0 x 29.0
+Back Panel (H x L),BP350340,34.0 x 35.0
+Back Panel (H x L),BP410340,34.0 x 41.0
+Back Panel (H x L),BP470340,34.0 x 47.0
+Back Panel (H x L),BP530340,34.0 x 53.0
+Cover Panel,IBC,BC
+Cover Panel,IBX,BX
+Cover Panel,IGC,GC
+Cover Panel,IGX,GX
+Front Panel (H x L),FP230240,24.0 x 23.0
+Front Panel (H x L),FP290240,24.0 x 29.0
+Front Panel (H x L),FP350240,24.0 x 35.0
+Front Panel (H x L),FP410240,24.0 x 41.0
+Front Panel (H x L),FP470240,24.0 x 47.0
+Front Panel (H x L),FP530240,24.0 x 53.0
+Front Panel (H x L),FP230300,30.0 x 23.0
+Front Panel (H x L),FP290300,30.0 x 29.0
+Front Panel (H x L),FP350300,30.0 x 35.0
+Front Panel (H x L),FP410300,30.0 x 41.0
+Front Panel (H x L),FP470300,30.0 x 47.0
+Front Panel (H x L),FP530300,30.0 x 53.0
+Front Panel (H x L),FP230360,36.0 x 23.0
+Front Panel (H x L),FP290360,36.0 x 29.0
+Front Panel (H x L),FP350360,36.0 x 35.0
+Front Panel (H x L),FP410360,36.0 x 41.0
+Front Panel (H x L),FP470360,36.0 x 47.0
+Front Panel (H x L),FP530360,36.0 x 53.0
+Front Panel (H x L),FP230420,42.0 x 23.0
+Front Panel (H x L),FP290420,42.0 x 29.0
+Front Panel (H x L),FP350420,42.0 x 35.0
+Front Panel (H x L),FP410420,42.0 x 41.0
+Front Panel (H x L),FP470420,42.0 x 47.0
+Front Panel (H x L),FP530420,42.0 x 53.0
+Leveling Panel (D),LP075,7.5
+Leveling Panel (D),LP095,9.5
+Leveling Panel (D),LP115,11.5
+Leveling Panel (D),LP135,13.5
+Structural Panel Left (D x H),SPL075240,7.5 x 24.0
+Structural Panel Left (D x H),SPL075300,7.5 x 30.0
+Structural Panel Left (D x H),SPL075360,7.5 x 36.0
+Structural Panel Left (D x H),SPL075420,7.5 x 42.0
+Structural Panel Left (D x H),SPL095240,9.5 x 24.0
+Structural Panel Left (D x H),SPL095300,9.5 x 30.0
+Structural Panel Left (D x H),SPL095360,9.5 x 36.0
+Structural Panel Left (D x H),SPL095420,9.5 x 42.0
+Structural Panel Left (D x H),SPL115240,11.5 x 24.0
+Structural Panel Left (D x H),SPL115300,11.5 x 30.0
+Structural Panel Left (D x H),SPL115360,11.5 x 36.0
+Structural Panel Left (D x H),SPL115420,11.5 x 42.0
+Structural Panel Left (D x H),SPL135240,13.5 x 24.0
+Structural Panel Left (D x H),SPL135300,13.5 x 30.0
+Structural Panel Left (D x H),SPL135360,13.5 x 36.0
+Structural Panel Left (D x H),SPL135420,13.5 x 42.0
+Structural Panel Right (D x H),SPR075240,7.5 x 24.0
+Structural Panel Right (D x H),SPR075300,7.5 x 30.0
+Structural Panel Right (D x H),SPR075360,7.5 x 36.0
+Structural Panel Right (D x H),SPR075420,7.5 x 42.0
+Structural Panel Right (D x H),SPR095240,9.5 x 24.0
+Structural Panel Right (D x H),SPR095300,9.5 x 30.0
+Structural Panel Right (D x H),SPR095360,9.5 x 36.0
+Structural Panel Right (D x H),SPR095420,9.5 x 42.0
+Structural Panel Right (D x H),SPR115240,11.5 x 24.0
+Structural Panel Right (D x H),SPR115300,11.5 x 30.0
+Structural Panel Right (D x H),SPR115360,11.5 x 36.0
+Structural Panel Right (D x H),SPR115420,11.5 x 42.0
+Structural Panel Right (D x H),SPR135240,13.5 x 24.0
+Structural Panel Right (D x H),SPR135300,13.5 x 30.0
+Structural Panel Right (D x H),SPR135360,13.5 x 36.0
+Structural Panel Right (D x H),SPR135420,13.5 x 42.0
+Top Panel (D x L),TP230075,7.5 x 23.0
+Top Panel (D x L),TP290075,7.5 x 29.0
+Top Panel (D x L),TP350075,7.5 x 35.0
+Top Panel (D x L),TP410075,7.5 x 41.0
+Top Panel (D x L),TP470075,7.5 x 47.0
+Top Panel (D x L),TP530075,7.5 x 53.0
+Top Panel (D x L),TP230095,9.5 x 23.0
+Top Panel (D x L),TP290095,9.5 x 29.0
+Top Panel (D x L),TP350095,9.5 x 35.0
+Top Panel (D x L),TP410095,9.5 x 41.0
+Top Panel (D x L),TP470095,9.5 x 47.0
+Top Panel (D x L),TP530095,9.5 x 53.0
+Top Panel (D x L),TP230115,11.5 x 23.0
+Top Panel (D x L),TP290115,11.5 x 29.0
+Top Panel (D x L),TP350115,11.5 x 35.0
+Top Panel (D x L),TP410115,11.5 x 41.0
+Top Panel (D x L),TP470115,11.5 x 47.0
+Top Panel (D x L),TP530115,11.5 x 53.0
+Top Panel (D x L),TP230135,13.5 x 23.0
+Top Panel (D x L),TP290135,13.5 x 29.0
+Top Panel (D x L),TP350135,13.5 x 35.0
+Top Panel (D x L),TP410135,13.5 x 41.0
+Top Panel (D x L),TP470135,13.5 x 47.0
+Top Panel (D x L),TP530135,13.5 x 53.0

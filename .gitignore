@@ -98,3 +98,6 @@ numpy-1.12.0-py2.7.egg-info/
 six-1.10.0.dist-info/
 *.zip
 *.pyc
+approvalForm/
+skus/
+images/
