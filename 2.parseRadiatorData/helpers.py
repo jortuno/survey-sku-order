@@ -248,10 +248,12 @@ def submitRadiators(radiators,surveyData,buildingId,surveyJSON,surveyType,survey
 	for roomId in surveyData[(surveyData["roomAccess"]=="yes")&(surveyData["unitAccess"]=="yes")]["roomId"].unique():
 		radiator = getStart(radiators[radiators["roomId"]==roomId])
 		for radiatorName in np.sort(surveyData[surveyData['roomId'] == roomId]["radiatorName"].dropna().unique()):
-			# print (radiatorName) 
-			# print (roomId)
+
 			index = surveyData[(surveyData['roomId'] == roomId) & (surveyData["radiatorName"]==radiatorName)].index.tolist()[0]
 			
+			list = ["floorName","lineName","unitName","unitNickName","roomName",
+				"roomNickName","radiatorName","radiatorNickName",
+				"radiatorType","pipingSystem"]
 			if radiatorName in radiators[radiators["roomId"]==roomId]["radiatorName"].values:
 				radiatorId = str(radiators[(radiators['roomId'] == roomId)&(radiators['radiatorName'] == radiatorName)].index.tolist()[0])
 			else:
@@ -268,9 +270,7 @@ def submitRadiators(radiators,surveyData,buildingId,surveyJSON,surveyType,survey
 					"radiatorName":surveyData.ix[index]["radiatorName"],
 					"active":False
 					}
-				list = ["floorName","lineName","unitName","unitNickName","roomName",
-				"roomNickName","radiatorName","radiatorNickName",
-				"radiatorType","pipingSystem"]
+
 				
 				for child in surveyJSON["children"]:
 					if str(child["identifier"]) in list:
