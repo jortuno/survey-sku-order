@@ -8,7 +8,7 @@
 
 Enforces conditions for the survey version based on the .json files, copies located in [google drive](https://drive.google.com/drive/u/0/folders/0B0GCp-2zx9AgUDhHWEEza3BlOTA)
 
-Survey .csv files are submitted to an AWS s3 bucket. This triggers a lambda function which determines if the submitted information is correct. If correct, confirms this with an email sent to the surveyors. If incorrect, deletes the file from the s3 bucket and informs surveyors of the issue via email. 
+Survey .csv files are submitted to an AWS s3 bucket. This triggers a lambda function which determines if the submitted information is correct. If correct, confirms this with an email sent to the surveyors. If incorrect, deletes the file from the s3 bucket and informs surveyors of the issue via email. See information on the steps to do this in [nuclino](https://app.nuclino.com/p/Post-Survey-Checklist-MJBU01PKDbpU0ndlOZn7TQ)
 
 Only steps required for the function is to submit to AWS bucket - the subsequent validation is automated. 
 
